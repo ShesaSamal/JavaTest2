@@ -1,9 +1,18 @@
 package com.singtel.practice.model;
 
 public class Animal {
+	private boolean canWalk;
 	private boolean canSing;
 	private boolean canSwim;
 	private String sound;
+	
+	public boolean isCanWalk() {
+		return canWalk;
+	}
+
+	public void setCanWalk(boolean canWalk) {
+		this.canWalk = canWalk;
+	}
 
 	public boolean isCanSing() {
 		return canSing;
@@ -47,6 +56,10 @@ public class Animal {
 	}
 
 	public void walk() {
-		System.out.println("I can walk");
+		if (canWalk) {
+			System.out.println("I can walk");
+		} else {
+			System.out.println("I can't walk");
+		}
 	}
 }

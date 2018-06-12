@@ -22,6 +22,7 @@ public class Bird extends Animal implements Cloneable {
 	@Override
 	protected Bird clone() {
 		Bird clonedBird = new Bird();
+		clonedBird.setCanWalk(this.isCanWalk());
 		clonedBird.setCanFly(this.canFly);
 		clonedBird.setCanSing(this.isCanSing());
 		clonedBird.setCanSwim(this.isCanSwim());

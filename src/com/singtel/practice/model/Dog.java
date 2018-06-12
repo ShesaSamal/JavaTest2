@@ -1,12 +1,11 @@
 package com.singtel.practice.model;
 
-public class Duck extends Bird {
+public class Dog extends Animal {
 
-	public Duck() {
+	public Dog() {
 		super.setCanWalk(true);
-		super.setCanFly(false);
 		super.setCanSing(true);
 		super.setCanSwim(true);
-		super.setSound("Quack, quack");
+		super.setSound("Woof, woof");
 	}
 }
