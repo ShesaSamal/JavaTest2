@@ -3,6 +3,7 @@ package com.singtel.practice.model;
 public class Animal {
 	private boolean canWalk;
 	private boolean canSing;
+	private boolean canFly;
 	private boolean canSwim;
 	private String sound;
 	
@@ -36,6 +37,22 @@ public class Animal {
 
 	public void setSound(String sound) {
 		this.sound = sound;
+	}
+	
+	public boolean isCanFly() {
+		return canFly;
+	}
+
+	public void setCanFly(boolean canFly) {
+		this.canFly = canFly;
+	}
+
+	public void fly() {
+		if (canFly) {
+			System.out.println("I can fly");
+		} else {
+			System.out.println("I can't fly");
+		}
 	}
 
 	public void swim() {
