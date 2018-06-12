@@ -20,6 +20,10 @@ public class Animal {
 	public void setCanSwim(boolean canSwim) {
 		this.canSwim = canSwim;
 	}
+	
+	public String getSound() {
+		return sound;
+	}
 
 	public void setSound(String sound) {
 		this.sound = sound;
